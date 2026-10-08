@@ -60,10 +60,10 @@ Sugestões de tipos: caça, coleta, entrega, escolta ou exploração. Outros tip
 
 ## Parte 4 — Entregar o XP ao herói (1,0 ponto)
 
-- [ ] Implementar `concluir_missao(self, heroi)` na classe `Missao`.
-- [ ] Alterar o status para `CONCLUIDA`, respeitando as regras de transição.
-- [ ] Calcular a recompensa após a alteração do status, pois ela só é liberada depois da conclusão.
-- [ ] Repassar a recompensa ao herói por meio do método existente `ganhar_experiencia()`.
+- [X] Implementar `concluir_missao(self, heroi)` na classe `Missao`.
+- [X] Alterar o status para `CONCLUIDA`, respeitando as regras de transição.
+- [X] Calcular a recompensa após a alteração do status, pois ela só é liberada depois da conclusão.
+- [X] Repassar a recompensa ao herói por meio do método existente `ganhar_experiencia()`.
 
 ## Parte 5 — Demonstração no main.py (1,0 ponto)
 

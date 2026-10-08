@@ -56,6 +56,10 @@ class Missao:
             return 0
         return self.recompensa
 
+    def concluir_missao(self, heroi):
+        self.status = StatusMissao.CONCLUIDA
+        heroi.ganhar_experiencia(self.calcular_recompensa())
+
     def exibir_dados(self):
         msg = f'''
 [{self.__class__.__name__}]
