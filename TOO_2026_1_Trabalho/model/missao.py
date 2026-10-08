@@ -2,6 +2,7 @@ from model.enums import StatusMissao
 
 
 class Missao:
+    # Apenas o status possui setter, pois muda conforme a missão avança no jogo.
     # Nome, descrição e recompensa são definidos na criação e ficam só para leitura.
 
     def __init__(self, nome, descricao, recompensa):
@@ -26,7 +27,6 @@ class Missao:
     def status(self):
         return self.__status
 
-    # Apenas o status possui setter, pois muda conforme a missão avança no jogo.
     @status.setter
     def status(self, valor):
         if not isinstance(valor, StatusMissao):

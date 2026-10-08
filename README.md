@@ -67,21 +67,21 @@ Sugestões de tipos: caça, coleta, entrega, escolta ou exploração. Outros tip
 
 ## Parte 5 — Demonstração no main.py (1,0 ponto)
 
-- [ ] Criar um herói.
-- [ ] Criar uma missão de cada um dos três tipos.
-- [ ] Colocar as missões em uma lista e percorrê-la chamando o mesmo método em todas, demonstrando polimorfismo.
-- [ ] Executar o ciclo completo de uma missão: `PENDENTE → EM_ANDAMENTO → CONCLUIDA`.
-- [ ] Demonstrar o herói subindo de nível com o XP recebido.
-- [ ] Exibir os atributos do herói antes e depois da evolução.
-- [ ] Provocar um erro de propósito, usando um status inválido ou uma transição proibida.
-- [ ] Tratar o erro com `try/except` e exibir sua mensagem.
+- [X] Criar um herói.
+- [X] Criar uma missão de cada um dos três tipos.
+- [X] Colocar as missões em uma lista e percorrê-la chamando o mesmo método em todas, demonstrando polimorfismo.
+- [X] Executar o ciclo completo de uma missão: `PENDENTE → EM_ANDAMENTO → CONCLUIDA`.
+- [X] Demonstrar o herói subindo de nível com o XP recebido.
+- [X] Exibir os atributos do herói antes e depois da evolução.
+- [X] Provocar um erro de propósito, usando um status inválido ou uma transição proibida.
+- [X] Tratar o erro com `try/except` e exibir sua mensagem.
 
 ## Conferência final
 
-- [ ] Conferir o encapsulamento da classe mãe e das subclasses.
-- [ ] Conferir que transições inválidas geram erros claros.
-- [ ] Conferir que nenhuma missão paga recompensa antes de ser concluída.
-- [ ] Conferir que cada tipo de missão calcula seu bônus a partir do atributo próprio.
-- [ ] Conferir que a conclusão entrega o XP ao herói e permite sua evolução.
-- [ ] Conferir que os métodos de evolução fornecidos não foram alterados.
-- [ ] Executar `main.py` e verificar todas as demonstrações exigidas.
+- [X] Conferir o encapsulamento da classe mãe e das subclasses.
+- [X] Conferir que transições inválidas geram erros claros.
+- [X] Conferir que nenhuma missão paga recompensa antes de ser concluída.
+- [X] Conferir que cada tipo de missão calcula seu bônus a partir do atributo próprio.
+- [X] Conferir que a conclusão entrega o XP ao herói e permite sua evolução.
+- [X] Conferir que os métodos de evolução fornecidos não foram alterados.
+- [X] Executar `main.py` e verificar todas as demonstrações exigidas.
