@@ -18,11 +18,11 @@ Evoluir a classe `Missao` do RPG desenvolvido em aula, aplicando encapsulamento,
 
 ## Parte 1 — Encapsulamento da classe Missao (1,5 ponto)
 
-- [ ] Refatorar `Missao` seguindo o padrão adotado em `Personagem`.
-- [ ] Tornar todos os atributos privados.
-- [ ] Disponibilizar uma `@property` para leitura de cada atributo.
-- [ ] Criar setters apenas para os atributos cuja alteração faça sentido durante o jogo.
-- [ ] Justificar a escolha dos setters em um comentário no topo da classe.
+- [X] Refatorar `Missao` seguindo o padrão adotado em `Personagem`.
+- [X] Tornar todos os atributos privados.
+- [X] Disponibilizar uma `@property` para leitura de cada atributo.
+- [X] Criar setters apenas para os atributos cuja alteração faça sentido durante o jogo.
+- [X] Justificar a escolha dos setters em um comentário no topo da classe.
 
 ## Parte 2 — Enum StatusMissao (2,0 pontos)
 
