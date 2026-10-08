@@ -2,7 +2,6 @@ from model.enums import StatusMissao
 
 
 class Missao:
-    # Apenas o status possui setter, pois muda conforme a missão avança no jogo.
     # Nome, descrição e recompensa são definidos na criação e ficam só para leitura.
 
     def __init__(self, nome, descricao, recompensa):
@@ -27,6 +26,7 @@ class Missao:
     def status(self):
         return self.__status
 
+    # Apenas o status possui setter, pois muda conforme a missão avança no jogo.
     @status.setter
     def status(self, valor):
         if not isinstance(valor, StatusMissao):
@@ -51,6 +51,11 @@ class Missao:
         self.status = StatusMissao.EM_ANDAMENTO
         return f'A missão {self.nome} começou! O objetivo é {self.descricao}.'
 
+    def calcular_recompensa(self):
+        if self.status is not StatusMissao.CONCLUIDA:
+            return 0
+        return self.recompensa
+
     def exibir_dados(self):
         msg = f'''
 [{self.__class__.__name__}]
@@ -63,3 +68,54 @@ Status: {self.status.value}
 
     def __str__(self):
         return f'missão [{self.__class__.__name__}]: {self.nome} | status: {self.status.value}'
+
+
+class MissaoCaca(Missao):
+    def __init__(self, nome, descricao, recompensa, quantidade_inimigos):
+        super().__init__(nome, descricao, recompensa)
+        self.__quantidade_inimigos = quantidade_inimigos
+
+    @property
+    def quantidade_inimigos(self):
+        return self.__quantidade_inimigos
+
+    def calcular_recompensa(self):
+        recompensa_base = super().calcular_recompensa()
+        if self.status is not StatusMissao.CONCLUIDA:
+            return 0
+        # Cada inimigo da missão acrescenta 10 XP à recompensa.
+        return recompensa_base + self.quantidade_inimigos * 10
+
+
+class MissaoEscolta(Missao):
+    def __init__(self, nome, descricao, recompensa, quantidade_escoltados):
+        super().__init__(nome, descricao, recompensa)
+        self.__quantidade_escoltados = quantidade_escoltados
+
+    @property
+    def quantidade_escoltados(self):
+        return self.__quantidade_escoltados
+
+    def calcular_recompensa(self):
+        recompensa_base = super().calcular_recompensa()
+        if self.status is not StatusMissao.CONCLUIDA:
+            return 0
+        # Cada pessoa escoltada acrescenta 20 XP à recompensa.
+        return recompensa_base + self.quantidade_escoltados * 20
+
+
+class MissaoExploracao(Missao):
+    def __init__(self, nome, descricao, recompensa, quantidade_locais):
+        super().__init__(nome, descricao, recompensa)
+        self.__quantidade_locais = quantidade_locais
+
+    @property
+    def quantidade_locais(self):
+        return self.__quantidade_locais
+
+    def calcular_recompensa(self):
+        recompensa_base = super().calcular_recompensa()
+        if self.status is not StatusMissao.CONCLUIDA:
+            return 0
+        # Cada local explorado acrescenta 15 XP à recompensa.
+        return recompensa_base + self.quantidade_locais * 15

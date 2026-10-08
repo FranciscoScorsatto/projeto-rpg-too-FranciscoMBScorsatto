@@ -8,6 +8,10 @@
 
 Evoluir a classe `Missao` do RPG desenvolvido em aula, aplicando encapsulamento, enumeração de status e herança. Criar diferentes tipos de missão e integrar suas recompensas ao sistema de experiência do herói.
 
+## Como foi feito
+
+Com o auxílio do codex, separei em partes e objetivos para fazer o projeto no README. A partir disso fui fazendo os passos que foram previamente separados pelo codex. Após fazer os passos pedi para a IA revisar para ver se consegui seguir os passos sem nenhum erro.
+
 ## O que já está pronto e deve ser preservado
 
 - O herói já possui os atributos `nivel` e `xp` e o método `ganhar_experiencia()`.
@@ -36,19 +40,19 @@ Evoluir a classe `Missao` do RPG desenvolvido em aula, aplicando encapsulamento,
 
 ### Atributos próprios (2,5 pontos)
 
-- [ ] Criar três subclasses de `Missao`.
-- [ ] Definir pelo menos um atributo próprio em cada subclasse.
-- [ ] Manter os atributos próprios privados e acessíveis por `property`.
+- [X] Criar três subclasses de `Missao`.
+- [X] Definir pelo menos um atributo próprio em cada subclasse.
+- [X] Manter os atributos próprios privados e acessíveis por `property`.
 
 Sugestões de tipos: caça, coleta, entrega, escolta ou exploração. Outros tipos também podem ser propostos.
 
 ### Cálculo de recompensa (2,0 pontos)
 
-- [ ] Na classe mãe, fazer `calcular_recompensa()` retornar `0` quando o status não for `StatusMissao.CONCLUIDA` e retornar `self.recompensa` quando estiver concluída.
-- [ ] Sobrescrever `calcular_recompensa()` nas três subclasses.
-- [ ] Reaproveitar o cálculo da classe mãe usando `super()`.
-- [ ] Somar um bônus derivado do atributo próprio de cada subclasse.
-- [ ] Garantir que a recompensa total, incluindo o bônus, seja `0` enquanto a missão estiver pendente ou em andamento.
+- [X] Na classe mãe, fazer `calcular_recompensa()` retornar `0` quando o status não for `StatusMissao.CONCLUIDA` e retornar `self.recompensa` quando estiver concluída.
+- [X] Sobrescrever `calcular_recompensa()` nas três subclasses.
+- [X] Reaproveitar o cálculo da classe mãe usando `super()`.
+- [X] Somar um bônus derivado do atributo próprio de cada subclasse.
+- [X] Garantir que a recompensa total, incluindo o bônus, seja `0` enquanto a missão estiver pendente ou em andamento.
 
 **Exemplo do enunciado:** uma missão de caça com recompensa base de 100 XP, cinco inimigos e bônus de 10 XP por inimigo deve retornar 150 XP quando concluída e 0 XP antes disso.
 
