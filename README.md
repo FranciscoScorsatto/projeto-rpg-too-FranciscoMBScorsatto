@@ -26,11 +26,11 @@ Evoluir a classe `Missao` do RPG desenvolvido em aula, aplicando encapsulamento,
 
 ## Parte 2 — Enum StatusMissao (2,0 pontos)
 
-- [ ] Criar o enum `StatusMissao` com os valores `PENDENTE`, `EM_ANDAMENTO` e `CONCLUIDA`.
-- [ ] Substituir o status em texto livre pelo enum.
-- [ ] Garantir a sequência obrigatória: `PENDENTE → EM_ANDAMENTO → CONCLUIDA`.
-- [ ] Impedir que etapas sejam puladas ou que o status retroceda.
-- [ ] Gerar erros com mensagens claras para valores de status ou transições inválidas.
+- [X] Criar o enum `StatusMissao` com os valores `PENDENTE`, `EM_ANDAMENTO` e `CONCLUIDA`.
+- [X] Substituir o status em texto livre pelo enum.
+- [X] Garantir a sequência obrigatória: `PENDENTE → EM_ANDAMENTO → CONCLUIDA`.
+- [X] Impedir que etapas sejam puladas ou que o status retroceda.
+- [X] Gerar erros com mensagens claras para valores de status ou transições inválidas.
 
 ## Parte 3 — Três tipos de missão (4,5 pontos)
 
